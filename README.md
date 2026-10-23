@@ -1,10 +1,10 @@
 # Enterprise Hotel Network Design & Implementation
 
-## 📌 Project Overview
+## Project Overview
 
 This project focuses on designing and implementing a multi-floor hotel network using **Cisco Packet Tracer**. The network connects eight departments across three floors while providing department-level network segmentation, dynamic IP addressing, inter-network communication, and secure remote router access.
 
-## 🎯 Objectives
+## Objectives
 
 - Design a network for three floors using three routers and three switches.
 - Create separate VLANs for each department.
@@ -16,7 +16,7 @@ This project focuses on designing and implementing a multi-floor hotel network u
 - Configure switch port security using sticky MAC address learning and shutdown violation mode.
 - Verify connectivity between departments.
 
-## 🏢 Network Structure
+## Network Structure
 
 | Floor | Department | VLAN ID | Network Address |
 |---|---|---:|---|
@@ -29,7 +29,7 @@ This project focuses on designing and implementing a multi-floor hotel network u
 | 3rd Floor | Admin | 20 | `192.168.2.0/24` |
 | 3rd Floor | IT | 10 | `192.168.1.0/24` |
 
-## 🛠️ Technologies and Protocols
+## Technologies and Protocols
 
 - **Cisco Packet Tracer** – Network design and simulation
 - **VLANs** – Department-level network segmentation
@@ -41,7 +41,7 @@ This project focuses on designing and implementing a multi-floor hotel network u
 - **Port Security** – Sticky MAC address learning and shutdown violation mode
 - **Serial DCE/DTE links** – Router-to-router connectivity
 
-## 🌐 Router-to-Router Connections
+## Router-to-Router Connections
 
 The three routers are interconnected using serial links in a triangle topology.
 
@@ -53,7 +53,7 @@ The three routers are interconnected using serial links in a triangle topology.
 
 OSPF is configured to advertise the department networks and router-to-router networks.
 
-## 🔐 Security Configuration
+## Security Configuration
 
 - SSH Version 2 for remote router administration.
 - Local username authentication for SSH access.
@@ -64,7 +64,7 @@ OSPF is configured to advertise the department networks and router-to-router net
 
 The designated **Test-PC** is connected to `SW3 Fa0/4` and is used to test remote SSH access to the routers.
 
-## 🧪 Testing and Verification
+## Testing and Verification
 
 The following tests are used to verify the implementation:
 
@@ -77,7 +77,7 @@ The following tests are used to verify the implementation:
 
 
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 Through this project, I gained practical experience in:
 
